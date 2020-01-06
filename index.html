@@ -1,9 +1,63 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>This is the title of the webpage!</title>
-  </head>
-  <body>
-    <p>This is an example paragraph. Anything in the <strong>body</strong> tag will appear on the page, just like this <strong>p</strong> tag and its contents.</p>
-  </body>
+<head>
+    <!-- Favicon head tag -->
+  <title>Under Construction</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+.bgimg {
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://img.theculturetrip.com/x/smart/wp-content/uploads/2019/02/gpr7w8.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Verdana", Courier, monospace;
+  font-size: 25px;
+}
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 25px;
+}
+.bottomleft {
+  position: absolute;
+  text-align: right;
+  bottom: 0;
+  left: 10px;
+}
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
+<body>
+
+<div class="bgimg">
+  <div class="middle">
+    <p><b>michael abdo<br>coming soon<b></p>
+  </div>
+  <div class="bottomleft">
+    <p>linux, cisco networking, python, red team security</p>
+  </div>
+</div>
+
+</body>
 </html>

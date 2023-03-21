@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Favicon head tag -->
-  <title>Matt Zigelstein</title>
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="msapplication-TileColor" content="#2b5797">
-	<meta name="theme-color" content="#ffffff">
+	<title>My Website</title>
+	<style>
+		body {
+		font-family: Bahnschrift, sans-serif;
+		margin: 0;
+		padding: 0;
+		background-color: #e1efff; /* new background color */
+		color: #4a5a6a; /* new font color */
+	}
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			font-size: 48px;
+			margin-top: 0;
+			margin-bottom: 20px;
+		}
+		p {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 40px;
+		}
+		img {
+			max-width: 100%;
+			height: auto;
+			margin-bottom: 20px;
+		}
+		.links {
+			position: absolute;
+			bottom: 10px;
+			left: 10px;
+			font-size: 14px;
+		}
+		.links a {
+			color: #4a5a6a; /* link color */
+			text-decoration: none;
+			margin-right: 20px;
+			font-size: 20px;
+		}
+		.links a:hover {
+		color: #6d7d8c; /* link hover color */
+			
+	}
+		.email-link:hover {
+  		color: #6d7d8c;
+	}
+		.email-link {
+			color: #2C3E50;
+		}
+			img {
+		display: block;
+		margin: auto;
+		margin-top: 100px;
+		max-width: 50%;
+		height: auto;
+	}
+	</style>
 </head>
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-}
-.bgimg {
-  background-image:
-    linear-gradient(
-      rgba(0, 0, 0, 0.5),
-      rgba(0, 0, 0, 0.5)
-    ),
-    url('background.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Verdana", Courier, monospace;
-  font-size: 25px;
-}
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 25px;
-}
-.bottomleft {
-  position: absolute;
-  text-align: right;
-  bottom: 0;
-  left: 10px;
-}
-.middle {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-hr {
-  margin: auto;
-  width: 40%;
-}
-</style>
 <body>
-
-<div class="bgimg">
-  <div class="middle">
-    <p><b>Matt Zigelstein<br>Website Under Construction<b></p>
-  </div>
-  <div class="bottomleft">
-    <p>contact info: matt@zigelstein.com     <a href="https://www.linkedin.com/in/matt-zigelstein/" target="_blank">LinkedIn</a></p>
-  </div>
+	<div class="container">
+		<img src="profile.png" alt="Your Photo" width="200" height="200" style="border: 18px solid #4a5a6a">
+		<h1>Matt Zigelstein</h1>
+		<p>Marketing Operations Specialist</p>
+	</div>
+	<div class="links">
+	<a href="https://www.linkedin.com/in/matt-zigelstein/" target="_blank">LinkedIn</a>
+	<a href="mailto:matt@zigelstein.com" target="_blank">Email</a>
 </div>
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;">Want a copy of my resume?</p>
+<p style="text-align: center;">Contact me: <a href="mailto:matt@zigelstein.com" class="email-link">matt@zigelstein.com</a></p>
+
 
 </body>
 </html>

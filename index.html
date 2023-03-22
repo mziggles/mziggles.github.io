@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>My Website</title>
+	<title>Matt Zigelstein</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 	<style>
+
 		body {
 		font-family: Bahnschrift, sans-serif;
 		margin: 0;
@@ -34,7 +36,8 @@
 		.links {
 			position: absolute;
 			bottom: 10px;
-			left: 10px;
+			left: 50%;
+			transform: translateX(-50%);
 			font-size: 14px;
 		}
 		.links a {
@@ -63,8 +66,11 @@
 	</style>
 </head>
 <body>
+	
+	
+	<script src="hamburger.js"></script>
 	<div class="container">
-		<img src="profile.png" alt="Your Photo" width="200" height="200" style="border: 18px solid #4a5a6a">
+		<img src="profile.png" alt="Your Photo" width="200" height="200" style="border: 18px solid #4a5a6a" oncontextmenu="return false;" draggable="false">
 		<h1>Matt Zigelstein</h1>
 		<p>Marketing Operations Specialist</p>
 	</div>

@@ -1,87 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Matt Zigelstein</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<style>
-
-		body {
-		font-family: Bahnschrift, sans-serif;
-		margin: 0;
-		padding: 0;
-		background-color: #e1efff; /* new background color */
-		color: #4a5a6a; /* new font color */
-	}
-		.container {
-			max-width: 800px;
-			margin: 0 auto;
-			padding: 20px;
-			text-align: center;
-		}
-		h1 {
-			font-size: 48px;
-			margin-top: 0;
-			margin-bottom: 20px;
-		}
-		p {
-			font-size: 18px;
-			line-height: 1.5;
-			margin-bottom: 40px;
-		}
-		img {
-			max-width: 100%;
-			height: auto;
-			margin-bottom: 20px;
-		}
-		.links {
-			position: absolute;
-			bottom: 10px;
-			left: 50%;
-			transform: translateX(-50%);
-			font-size: 14px;
-		}
-		.links a {
-			color: #4a5a6a; /* link color */
-			text-decoration: none;
-			margin-right: 20px;
-			font-size: 20px;
-		}
-		.links a:hover {
-		color: #6d7d8c; /* link hover color */
-			
-	}
-		.email-link:hover {
-  		color: #6d7d8c;
-	}
-		.email-link {
-			color: #2C3E50;
-		}
-			img {
-		display: block;
-		margin: auto;
-		margin-top: 100px;
-		max-width: 50%;
-		height: auto;
-	}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matt Zigelstein - Marketing Operations Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section {
+            scroll-margin-top: 64px;
+        }
+    </style>
 </head>
-<body>
-	
-	
-	<script src="hamburger.js"></script>
-	<div class="container">
-		<img src="profile.png" alt="Your Photo" width="200" height="200" style="border: 18px solid #4a5a6a" oncontextmenu="return false;" draggable="false">
-		<h1>Matt Zigelstein</h1>
-		<p>Marketing Operations Specialist</p>
-	</div>
-	<div class="links">
-	<a href="https://www.linkedin.com/in/matt-zigelstein/" target="_blank">LinkedIn</a>
-	<a href="mailto:matt@zigelstein.com" target="_blank">Email</a>
-</div>
-<p style="text-align: center;">&nbsp;</p>
-<p style="text-align: center;">Want a copy of my resume?</p>
-<p style="text-align: center;">Contact me: <a href="mailto:matt@zigelstein.com" class="email-link">matt@zigelstein.com</a></p>
+<body class="bg-gray-50 text-gray-800">
 
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-900">Matt Zigelstein</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 transition duration-300">About</a>
+                <a href="#resume" class="text-gray-600 hover:text-indigo-600 transition duration-300">Resume</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-gray-600 hover:text-indigo-600">About</a>
+            <a href="#resume" class="block py-2 text-gray-600 hover:text-indigo-600">Resume</a>
+            <a href="#contact" class="block py-2 text-gray-600 hover:text-indigo-600">Contact</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="bg-white">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <div class="max-w-3xl mx-auto">
+                    <img src="20240922_170501.jpg" alt="Matt Zigelstein" class="w-32 h-32 rounded-full mx-auto mb-6 border-4 border-gray-200 shadow-lg object-cover">
+                    <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight mb-4">Marketing Operations Professional</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8">Leveraging technology and problem-solving to enable streamlined operations and achieve measurable results.</p>
+                    <a href="#contact" class="bg-indigo-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-indigo-700 transition duration-300 ease-in-out transform hover:scale-105">Get In Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 md:py-28 section">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">About Me</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        Marketing Operations Specialist with 4+ years of experience, demonstrating proficiency in campaign management and execution, CRM platform administration, data analysis and hygiene, implementing automation solutions, and optimizing marketing processes. Adept at leveraging marketing technologies, AI, and problem-solving to enable streamlined operations and achieve measurable results. On track to achieve PMP designation with 2 years of experience managing projects.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="bg-white py-20 md:py-28 section">
+            <div class="container mx-auto px-6">
+                <div class="max-w-4xl mx-auto">
+                    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">Resume</h2>
+
+                    <!-- Experience -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Work Experience</h3>
+                        <div class="space-y-8">
+                            <!-- Job 1 -->
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <div class="flex justify-between items-start flex-col sm:flex-row">
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Senior Marketing Operations Specialist</h4>
+                                        <p class="text-md text-indigo-600 font-medium">Loopio | Toronto (Full Remote)</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 font-medium mt-2 sm:mt-0">2025</span>
+                                </div>
+                                <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                                    <li>Oversaw and optimized Hubspot CRM operations, enhancing automations, emails, and reports.</li>
+                                    <li>Refined contact database management and audience segmentation strategies, increasing data accuracy for effective campaign targeting.</li>
+                                    <li>Coordinated with marketing and sales teams to provide thorough and complete journeys for leads to be effectively targeted and subsequently routed.</li>
+                                </ul>
+                            </div>
+                            <!-- Job 2 -->
+                            <div class="bg-gray-50 p-6 rounded-lg shadow-sm">
+                                <div class="flex justify-between items-start flex-col sm:flex-row">
+                                    <div>
+                                        <h4 class="text-xl font-bold text-gray-900">Marketing Operations Specialist</h4>
+                                        <p class="text-md text-indigo-600 font-medium">Quadient | Markham (Full Remote)</p>
+                                    </div>
+                                    <span class="text-sm text-gray-500 font-medium mt-2 sm:mt-0">2021 - 2025</span>
+                                </div>
+                                <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                                    <li>Skillfully implemented a range of marketing technologies, significantly streamlining processes and reducing manual workloads.</li>
+                                    <li>Managed large datasets to ensure data hygiene and compliance with global laws (GDPR).</li>
+                                    <li>Developed comprehensive training programs and documentation for new tools and streamlined processes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Skills -->
+                    <div class="mt-12">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Areas of Expertise</h3>
+                        <div class="flex flex-wrap gap-3">
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Salesforce</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Hubspot</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Pardot</span>
+                             <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Zapier</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Eloqua</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Data Analytics</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">Google Analytics</span>
+                             <span class="bg-indigo-100 text-indigo-800 text-sm font-medium px-4 py-2 rounded-full">AI Tools</span>
+                        </div>
+                    </div>
+                     <div class="text-center mt-12">
+                        <a href="#" class="bg-gray-700 text-white font-semibold px-8 py-3 rounded-lg hover:bg-gray-800 transition duration-300">Download Full Resume (PDF)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 md:py-28 section">
+            <div class="container mx-auto px-6">
+                <div class="max-w-3xl mx-auto text-center">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Let's Connect</h2>
+                    <p class="text-lg text-gray-700 mb-8">I'm always open to discussing new opportunities or collaborations. Feel free to reach out!</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="https://linkedin.com/in/matt-zigelstein" target="_blank" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                            <i class="fab fa-linkedin fa-3x"></i>
+                        </a>
+                        <a href="mailto:matt.zigelstein@yahoo.ca" class="text-gray-500 hover:text-indigo-600 transition duration-300">
+                            <i class="fas fa-envelope fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 Matt Zigelstein. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Wait for the DOM to be fully loaded before running the script
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+
+            // Smooth scrolling for anchor links
+            const anchorLinks = document.querySelectorAll('a[href^="#"]');
+            
+            anchorLinks.forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    
+                    // Also close mobile menu if open and it exists
+                    if (mobileMenu && !mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    const targetElement = document.querySelector(this.getAttribute('href'));
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>
